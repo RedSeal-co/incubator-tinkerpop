@@ -18,18 +18,38 @@ limitations under the License.
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- REDSEAL
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
         <version>16</version>
     </parent>
     <groupId>org.apache.tinkerpop</groupId>
+    -->
+
     <artifactId>tinkerpop</artifactId>
     <version>3.0.0.M8-incubating</version>
     <packaging>pom</packaging>
     <name>Apache TinkerPop</name>
     <description>A Graph Computing Framework</description>
     <url>http://tinkerpop.incubator.apache.org/</url>
+
+    <distributionManagement>
+      <repository>
+        <uniqueVersion>false</uniqueVersion>
+        <id>central</id>
+        <name>Third Party Releases</name>
+        <url>http://art-v1.lab.redseal.net:8081/artifactory/ext-release-local</url>
+      </repository>
+      <snapshotRepository>
+        <uniqueVersion>true</uniqueVersion>
+        <id>snapshots</id>
+        <name>Third Party Snapshots</name>
+        <url>http://art-v1.lab.redseal.net:8081/artifactory/ext-snapshot-local</url>
+      </snapshotRepository>
+    </distributionManagement>
+
     <mailingLists>
         <mailingList>
             <name>Users</name>
