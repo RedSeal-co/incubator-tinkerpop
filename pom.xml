@@ -40,13 +40,13 @@ limitations under the License.
         <uniqueVersion>false</uniqueVersion>
         <id>central</id>
         <name>Third Party Releases</name>
-        <url>http://art-v1.lab.redseal.net:8081/artifactory/ext-release-local</url>
+        <url>http://artifactory.lab.redseal.net:8081/artifactory/ext-release-local</url>
       </repository>
       <snapshotRepository>
         <uniqueVersion>true</uniqueVersion>
         <id>snapshots</id>
         <name>Third Party Snapshots</name>
-        <url>http://art-v1.lab.redseal.net:8081/artifactory/ext-snapshot-local</url>
+        <url>http://artifactory.lab.redseal.net:8081/artifactory/ext-snapshot-local</url>
       </snapshotRepository>
     </distributionManagement>
 
